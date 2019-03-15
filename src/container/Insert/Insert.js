@@ -52,11 +52,11 @@ class Insert extends Component {
         this.setState({ products });
     }
 
-    onEditSubmit = (name, price, originalName) => {
+    onEditSubmit = (name, price, id) => {
         let products = this.getProducts();
 
         products = products.map(product => {
-            if (product.name === originalName) {
+            if (product.id === id) {
                 product.name = name;
                 product.price = price;
             }

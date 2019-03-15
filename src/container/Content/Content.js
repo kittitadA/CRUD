@@ -17,7 +17,7 @@ class Content extends Component {
     onEditSubmit = (event) => {
         event.preventDefault();
 
-        this.props.onEditSubmit(this.nameInput.value, this.priceInput.value, this.props.productName);
+        this.props.onEditSubmit(this.nameInput.value, this.priceInput.value, this.props.id);
 
         this.setState({ isEdit: false });
     }
